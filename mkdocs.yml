@@ -1,10 +1,10 @@
 site_name: Find The Items
-site_url: https://meteorbee.github.io/FindTheItemsKit
+site_url: https://meteorbee.github.io/FindTheItems
 site_description: The documentation for my Find The Items Kit
 site_author: meteorbee
 
-repo_name: meteorbee/FindTheItemsKit
-repo_url: https://github.com/meteorbee/FindTheItemsKit
+repo_name: meteorbee/FindTheItems
+repo_url: https://github.com/meteorbee/FindTheItems
 edit_uri: ""
 
 theme:
