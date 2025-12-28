@@ -1,2 +1,1 @@
-This is the repo for the Find The Items Kit documentation.
-For source code, look at meteorbee/FindTheItemsKit
+The official Find The Items kit repo! With source code and documentation!!!

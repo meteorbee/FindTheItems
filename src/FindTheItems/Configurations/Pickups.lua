@@ -1,0 +1,3 @@
+return {
+	CharacterControllerName = "Humanoid"	
+}
