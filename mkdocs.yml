@@ -28,8 +28,6 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-  logo: assets/Gear.png
-  favicon: assets/Gear23.png
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
