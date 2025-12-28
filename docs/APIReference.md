@@ -27,8 +27,9 @@ local FindTheItemsKit = require(game.ReplicatedStorage.FindTheItems)
 local FindTheItems = FindTheItemsKit.new()
 
 FindTheItems:InitializeItemsIn(game.ReplicatedStorage.Items)
-FindTheItems:GiveItem(game.Players.ImTembee2, require(game.ReplicatedStorage.Items.MyItem))
+FindTheItems:GiveItem(game.Players.ImTembee2, require(game.ReplicatedStorage.Items.MyItem)) # (1)
 ```
+1. The item module is the same thing as the ones used in FindTheItems:InitializeItemsIn()
 
 ## Client
 ### ClientModule.Init() 
