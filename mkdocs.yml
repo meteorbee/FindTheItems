@@ -1,0 +1,39 @@
+site_name: OVERVOLT
+site_url: https://meteorbee.github.io/FindTheItemsKit
+site_description: The documentation for my Find The Items Kit
+site_author: Tembee2
+
+repo_name: tembee2/FindTheItemsKit
+repo_url: https://github.com/tembee2/FindTheItemsKit
+edit_uri: ""
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  logo: assets/Gear.png
+  favicon: assets/Gear23.png
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Capabilities: capabilities.md
+  - API Reference: APIReference/APIReference.md
+plugins:
+  - glightbox
