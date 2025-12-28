@@ -35,7 +35,7 @@ FindTheItems:GiveItem(game.Players.ImTembee2, require(game.ReplicatedStorage.Ite
 ### ClientModule.Init() 
 <span class="md-tag md-tag--secondary">Client Only</span>
 Initializes all client-related things
-```luau
+```luau title="FindTheItemsClient.lua"
 local FindTheItemsClient = require(game.ReplicatedStorage.FindTheItems.ClientModule)
 FindTheItemsClient.Init()
 ```
