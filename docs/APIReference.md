@@ -35,11 +35,8 @@ FindTheItems:GiveItem(game.Players.ImTembee2, require(game.ReplicatedStorage.Ite
 <span class="md-tag md-tag--secondary">Client Only</span>
 Gives an item to a player
 ```luau
-local FindTheItemsKit = require(game.ReplicatedStorage.FindTheItems)
-local FindTheItems = FindTheItemsKit.new()
-
-FindTheItems:InitializeItemsIn(game.ReplicatedStorage.Items)
-FindTheItems:GiveItem(game.Players.ImTembee2, require(game.ReplicatedStorage.Items.MyItem))
+local FindTheItemsClient = require(game.ReplicatedStorage.FindTheItems.ClientModule)
+FindTheItemsClient.Init()
 ```
 
 
