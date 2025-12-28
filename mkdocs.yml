@@ -1,10 +1,10 @@
-site_name: OVERVOLT
+site_name: Find The Items
 site_url: https://meteorbee.github.io/FindTheItemsKit
 site_description: The documentation for my Find The Items Kit
-site_author: Tembee2
+site_author: meteorbee
 
-repo_name: tembee2/FindTheItemsKit
-repo_url: https://github.com/tembee2/FindTheItemsKit
+repo_name: meteorbee/FindTheItemsKit
+repo_url: https://github.com/meteorbee/FindTheItemsKit
 edit_uri: ""
 
 theme:
