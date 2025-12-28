@@ -1,6 +1,7 @@
 # API Reference
 
-## FindTheItems.new() : FindTheItems 
+## Server
+### FindTheItems.new() : FindTheItems 
 <span class="md-tag md-tag--secondary">Server Only</span>
 This creates a new FindTheItems class
 ```luau
@@ -8,7 +9,7 @@ local FindTheItemsKit = require(game.ReplicatedStorage.FindTheItems)
 local FindTheItems = FindTheItemsKit.new()
 ```
 
-## FindTheItems:InitializeItemsIn(dir: Folder) 
+### FindTheItems:InitializeItemsIn(dir: Folder) 
 <span class="md-tag md-tag--secondary">Server Only</span>
 Run this to initialize all the items in dir.
 ```luau
@@ -18,7 +19,7 @@ local FindTheItems = FindTheItemsKit.new()
 FindTheItems:InitializeItemsIn(game.ReplicatedStorage.Items)
 ```
 
-## FindTheItems:GiveItem(plr: Player, item: Item) 
+### FindTheItems:GiveItem(plr: Player, item: Item) 
 <span class="md-tag md-tag--secondary">Server Only</span>
 Gives an item to a player
 ```luau
@@ -29,7 +30,8 @@ FindTheItems:InitializeItemsIn(game.ReplicatedStorage.Items)
 FindTheItems:GiveItem(game.Players.ImTembee2, require(game.ReplicatedStorage.Items.MyItem))
 ```
 
-## ClientModule.Init() 
+## Client
+### ClientModule.Init() 
 <span class="md-tag md-tag--secondary">Client Only</span>
 Gives an item to a player
 ```luau
