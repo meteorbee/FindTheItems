@@ -1,7 +1,6 @@
 # API Reference
 
 ## FindTheItems.new() : FindTheItems 
-`FindTheItems.new() -> FindTheItems`
 <span class="md-tag md-tag--secondary">Server Only</span>
 This creates a new FindTheItems class
 ```luau
