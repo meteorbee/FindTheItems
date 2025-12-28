@@ -15,6 +15,7 @@ theme:
     - navigation.top
     - toc.integrate
     - content.code.annotate
+    - content.code.copy
   palette:
     - scheme: default
       primary: indigo
