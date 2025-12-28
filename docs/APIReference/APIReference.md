@@ -1,6 +1,6 @@
 # API Reference
 
-* [FindTheItems.new()](FindTheItems.new() : FindTheItems <span class="md-tag md-tag--primary">Server Only</span>)
+* [FindTheItems.new()](#findtheitemsnew--findtheitems)
 
 
 ## FindTheItems.new() : FindTheItems <span class="md-tag md-tag--primary">Server Only</span>
