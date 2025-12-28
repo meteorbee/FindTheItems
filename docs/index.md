@@ -4,4 +4,4 @@
 ## Quicklinks
 * [Getting Started](getting-started.md)
 * [Capabilities](capabilities.md)
-* [API Reference](APIReference/APIReference.md)
+* [API Reference](APIReference.md)
