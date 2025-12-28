@@ -41,5 +41,3 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.superfences
-extra_css:
-  - stylesheets/fonts.css
