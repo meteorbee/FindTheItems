@@ -25,7 +25,10 @@ export type FindTheItems = {
 	InitializeItemsIn: (self: FindTheItems, Folder?) -> (),
 	SetupResources: (self: FindTheItems) -> (),
 	GiveItem: (self: FindTheItems, Player, Item) -> (),
-	PlayerOwnsItem: (self: FindTheItems, Player, string) -> ()
+	PlayerOwnsItem: (self: FindTheItems, Player, string) -> (),
+	SetStat: (self: FindTheItems, Player, string, any, "Year" | "AllTime"),
+	GetStat: (self: FindTheItems, Player, string, "Year" | "AllTime"),
+	AddToStat: (self: FindTheItems, Player, string, any),
 }
 
 -- Modules and Services

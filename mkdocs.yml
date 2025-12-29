@@ -13,32 +13,64 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.path
+    - content.tooltips
     - toc.integrate
     - content.code.annotate
     - content.code.copy
+    - content.tooltips
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
     - scheme: slate
-      primary: indigo
+      primary: black
       accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
 nav:
   - Home: index.md
-  - Getting Started: getting-started.md
-  - Capabilities: capabilities.md
-  - API Reference: APIReference.md
+
+  - Documentation:
+    - Getting Started:
+      - Installation: GettingStarted/installation.md
+      - Making an item:
+        - Item structure: GettingStarted/MakingAnItem/item-structure.md
+        - Item setup: GettingStarted/MakingAnItem/item-setup.md
+      - Making custom pickup logic: GettingStarted/making-custom-pickup-logic.md
+      - Making menu items: GettingStarted/making-menu-items.md
+      - Making fast travel points: GettingStarted/making-fast-travel-points.md
+      - Making realms: GettingStarted/making-realms.md
+      - Sendoff: GettingStarted/sendoff.md
+
+    - API Reference:
+      - FindTheItems:
+        - FindTheItems.new(): APIReference/FindTheItems/new.md
+        - FindTheItems:InitializeItemsIn(): APIReference/FindTheItems/initializeitemsin.md
+        - FindTheItems:GiveItem(): APIReference/FindTheItems/giveitem.md
+        - FindTheItems:SetStat(): APIReference/FindTheItems/setstat.md
+        - FindTheItems:GetStat(): APIReference/FindTheItems/getstat.md
+        - FindTheItems:AddToStat(): APIReference/FindTheItems/addtostat.md
+        - FindTheItems:SetupResources(): APIReference/FindTheItems/setupresources.md
+      - ClientModule:
+        - ClientModule.Init(): APIReference/ClientModule/init.md
+
+    - Types:
+        - FindTheItems: Types/findtheitems.md
+        - Item: Types/item.md
+
+  - About:
+    - Capabilities: capabilities.md
 plugins:
   - glightbox
 markdown_extensions:
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.superfences
+extra_css:
+  - stylesheets/colors.css
