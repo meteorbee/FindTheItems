@@ -12,6 +12,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.footer
     - navigation.top
     - navigation.path
     - content.tooltips
@@ -22,7 +23,6 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-    - toc.follow
   palette:
     - scheme: slate
       primary: black
@@ -33,9 +33,7 @@ nav:
   - Documentation:
     - Getting Started:
       - Installation: GettingStarted/installation.md
-      - Making an item:
-        - Item structure: GettingStarted/MakingAnItem/item-structure.md
-        - Item setup: GettingStarted/MakingAnItem/item-setup.md
+      - Making an item: GettingStarted/making-an-item.md
       - Making custom pickup logic: GettingStarted/making-custom-pickup-logic.md
       - Making menu items: GettingStarted/making-menu-items.md
       - Making fast travel points: GettingStarted/making-fast-travel-points.md
@@ -59,7 +57,8 @@ nav:
         - Item: Types/item.md
 
   - About:
-    - Capabilities: capabilities.md
+    - Capabilities: About/capabilities.md
+    - Patch Notes: About/changelogs.md
 plugins:
   - glightbox
 markdown_extensions:
