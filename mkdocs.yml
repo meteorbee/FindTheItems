@@ -27,6 +27,8 @@ theme:
     - scheme: slate
       primary: black
       accent: indigo
+  logo: Resources/Icon-MC.png
+  favicon: Resources/Icon-MC.png
 nav:
   - Home: index.md
 

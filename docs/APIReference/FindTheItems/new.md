@@ -5,7 +5,7 @@ Arguments (1) | Returns (2)
 { .annotate }
 
 1. None
-2. [FindTheItems](../Types/findtheitems.md)
+2. [FindTheItems](/FindTheItems/Types/findtheitems)
 
 This creates a new FindTheItems class
 ```luau title="Example Code" linenums="1" hl_lines="3"

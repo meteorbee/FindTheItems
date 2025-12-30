@@ -4,7 +4,7 @@
 Arguments (1) | Returns (2)
 { .annotate }
 
-1. [plr: Player](https://create.roblox.com/docs/reference/engine/classes/Player), [item: Item](../Types/item.md)
+1. [plr: Player](https://create.roblox.com/docs/reference/engine/classes/Player), [item: Item](/FindTheItems/Types/item)
 2. nil
 
 Gives an item to a player

@@ -15,4 +15,4 @@ local FindTheItems = FindTheItemsKit.new()
 FindTheItems:InitializeItemsIn(game.ReplicatedStorage.Items) -- (1)!
 ```
 
-1. All Instances in the folder should be modulescripts with a table inside of type [Item](../Types/item.md)
+1. All Instances in the folder should be modulescripts with a table inside of type [Item](/FindTheItems/Types/item)
