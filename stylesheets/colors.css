@@ -1,0 +1,8 @@
+:root > * {
+  --md-code-hl-string-color: rgb(173, 241, 149);
+  --md-code-hl-keyword-color: rgb(248, 109, 124);
+  --md-code-hl-operator-color: rgb(204, 204, 204);
+  --md-code-hl-variable-color: rgb(204, 204, 204);
+  --md-code-hl-function-color: rgb(253, 251, 172);
+  --md-code-hl-number-color: rgb(255, 198, 0);
+}
