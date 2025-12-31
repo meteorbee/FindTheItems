@@ -1,3 +1,6 @@
+# 1.2.1
+* Fixed issue with awarding badges
+
 # 1.2
 * Fixed FindTheItems type, adding SetStat, AddToStat, And GetStat
 
