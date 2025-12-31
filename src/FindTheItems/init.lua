@@ -26,9 +26,9 @@ export type FindTheItems = {
 	SetupResources: (self: FindTheItems) -> (),
 	GiveItem: (self: FindTheItems, Player, Item) -> (),
 	PlayerOwnsItem: (self: FindTheItems, Player, string) -> (),
-	SetStat: (self: FindTheItems, Player, string, any, "Year" | "AllTime"),
-	GetStat: (self: FindTheItems, Player, string, "Year" | "AllTime"),
-	AddToStat: (self: FindTheItems, Player, string, any),
+	SetStat: (self: FindTheItems, Player, string, any, "Year" | "AllTime") -> (),
+	GetStat: (self: FindTheItems, Player, string, "Year" | "AllTime") -> (any),
+	AddToStat: (self: FindTheItems, Player, string, any) -> (),
 }
 
 -- Modules and Services
@@ -156,7 +156,7 @@ function Shared:SetupResources()
 			for i, v in UserData.UnlockedItems do
 				if Initialized[i] then
 					if Initialized[i].Badge ~= 0 and Initialized[i].Badge ~= nil then
-						game:GetService("BadgeService"):AwardBadgeAsync(plr, Initialized[i].Badge)
+						game:GetService("BadgeService"):AwardBadgeAsync(plr.UserId, Initialized[i].Badge)
 					end
 				end
 			end
@@ -353,7 +353,7 @@ function Shared:GiveItem(plr:Player, item:Item)
 	
 	game.ReplicatedStorage.FindTheItemsResources.ShowNotification:FireClient(plr, item.DisplayName, ("You got %s. You can now view it in the dex!"):format(item.DisplayName), item.Icon)
 	if item.Badge ~= 0 and item.Badge ~= nil then
-		game:GetService("BadgeService"):AwardBadgeAsync(plr, item.Badge)
+		game:GetService("BadgeService"):AwardBadgeAsync(plr.UserId, item.Badge)
 	end
 	DataStorage.SetPlayerData(PlayerData)
 end
